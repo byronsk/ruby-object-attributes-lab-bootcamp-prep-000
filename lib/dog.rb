@@ -1,18 +1,12 @@
 class Dog
  
   def initialize(name, breed)
-    @name = first_name
-    @last_name = last_name
-  end
- 
-  def name=(full_name)
-    first_name, last_name = full_name.split
-    @first_name = first_name
-    @last_name = last_name
+    @name = name
+    @breed = breed
   end
  
   def name
-    "#{@first_name} #{@last_name}".strip
+    "#{@name} #{@breed}".strip
   end
  
 end
