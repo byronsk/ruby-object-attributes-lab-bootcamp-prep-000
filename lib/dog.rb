@@ -1,3 +1,3 @@
 class Dog
  
-def dog
+def name = 
