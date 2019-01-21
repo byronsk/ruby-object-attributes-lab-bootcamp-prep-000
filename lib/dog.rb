@@ -1,21 +1,19 @@
 class Dog
  
-  def Dog(name)
-    @name = name
+  def initialize(name, breed)
+    @name = first_name
+    @last_name = last_name
   end
-
-  def Dog
-    @name
+ 
+  def name=(full_name)
+    first_name, last_name = full_name.split
+    @first_name = first_name
+    @last_name = last_name
   end
-  
-  def Dog(breed)
-   @breed = breed
+ 
+  def name
+    "#{@first_name} #{@last_name}".strip
+  end
+ 
 end
-
-  def breed
-    @breed
-  end
-end
-
-kanye.instance_variable_set(:@name,:@breed)
 
