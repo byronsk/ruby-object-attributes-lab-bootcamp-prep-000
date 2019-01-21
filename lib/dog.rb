@@ -13,4 +13,3 @@ end
 
 def breed = @name
 end
-end
